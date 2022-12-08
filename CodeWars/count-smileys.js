@@ -1,3 +1,6 @@
+//6 kyu
+
+
 function countSmileys(arr) {
     const eyes = [':', ';']
     const nose = ['-', '~']
