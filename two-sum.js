@@ -31,6 +31,9 @@ var lengthOfLongestSubstring = function(s) {
 
 
         if(windowCharsMap[endChar] >= windowStart){
+            //does {a: 0} exist? No! The gatekeeper exits here and creates 
+            //with the code below, iterating until BOTH conditions are met.    
+
 
             windowStart = windowCharsMap[endChar] + 1
             //conditional that makes sure the object key value pair exists in the object &&
