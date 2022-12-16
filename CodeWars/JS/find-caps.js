@@ -3,15 +3,26 @@
 // Example
 // Test.assertSimilar( capitals('CodEWaRs'), [0,3,4,6] );
 
+// var capitals = function (word) {
+// 	const caps = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+//   let arr = []
+  
+//   for(let i = 0 ; i < word.length ; i++){
+//     if(caps.includes(word[i])){
+//       arr.push(i)
+//     }
+//   }
+  
+//   return arr
+// };
+
 var capitals = function (word) {
-	const caps = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
   let arr = []
   
   for(let i = 0 ; i < word.length ; i++){
-    if(caps.includes(word[i])){
+    if(word[i].toUpperCase() === word[i]){
       arr.push(i)
     }
   }
-  
   return arr
 };
