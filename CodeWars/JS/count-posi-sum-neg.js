@@ -11,8 +11,13 @@ function countPositivesSumNegatives(input) {
     let arr=[]
     let posi = 0
     let sumNeg = 0
-    
-    for(let i = 0 ; i < input.length ; i++){
+    if(!input){
+      return arr
+      
+    } else 
+      
+      for(let i = 0 ; i < input.length ; i++){
+      
       if(input[i] < 0){
         sumNeg += input[i]
       }
@@ -22,6 +27,10 @@ function countPositivesSumNegatives(input) {
       }
     }
     
-    arr.push(posi, sumNeg)
-    return arr
-  }
+    if(posi === 0 && sumNeg === 0){
+      return arr
+      } else 
+        arr.push(posi, sumNeg)
+        return arr
+}
+  
